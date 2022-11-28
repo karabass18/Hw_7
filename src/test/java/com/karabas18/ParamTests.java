@@ -31,7 +31,7 @@ public class ParamTests {
 
     @ParameterizedTest(name = "Проверка наличия в выдаче поиска по коду {0} товара" +
                         " названий бренда {1} и модели {2}")
-    void detMirTest(String serchQuery, String expectedBrand, String expectedName) {
+    void sportMarafonTest(String serchQuery, String expectedBrand, String expectedName) {
         $(".header__search").click();
         $("#head-search-input").setValue(serchQuery).pressEnter();
         $(".product-list__brand").shouldHave(text(expectedBrand));
